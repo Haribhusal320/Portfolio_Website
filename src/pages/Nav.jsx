@@ -11,13 +11,13 @@ function Nav() {
   };
 
   return (
-    <div className="  text-2xl md:flex md:justify-between md:w-1/3 items-center">
+    <div className="  text-2xl md:flex md:justify-between md:w-2/5 items-center ">
       {/* Desktop view */}
       <div className="hidden md:flex">
         <Link smooth to='#about' offset={-70} className="link link-hover">About</Link>
         <Link smooth to='#education' className="link link-hover ml-4">Education</Link>
         <Link smooth to='#skills' className="link link-hover ml-4">Skills</Link>
-        <Link smooth to='#projects' className="link link-hover ml-4">Projects</Link>
+        <Link smooth to='#experience' className="link link-hover ml-4">Experience</Link>
         <Link smooth to='#contact' className="link link-hover ml-4">Contact</Link>
       </div>
 
@@ -30,7 +30,7 @@ function Nav() {
             <Link smooth to='#about' offset={-70} className="link link-hover">About</Link>
             <Link smooth to='#education' className="link link-hover mt-2">Education</Link>
             <Link smooth to='#skills' className="link link-hover mt-2">Skills</Link>
-            <Link smooth to='#projects' className="link link-hover mt-2">Projects</Link>
+            <Link smooth to='#experience' className="link link-hover mt-2">Experience</Link>
             <Link smooth to='#contact' className="link link-hover mt-2">Contact</Link>
           </div>
         ) : (
