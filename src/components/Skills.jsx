@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import skills from '../Images/Skills.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import {faCss3Alt, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import { SiTailwindcss } from "react-icons/si";
 import pythonLogo from '../Images/python.svg';
 import github from '../Images/github.svg';

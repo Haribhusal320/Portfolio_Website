@@ -1,1 +1,1 @@
-This is my personal portfolio website built using React, Tailwind CSS, and daisyUI. The site showcases my skills, education, and projects, providing visitors with an overview of my journey as a frontend developer. Feel free to explore and learn more about me. 
+This is my personal portfolio website built using React, Tailwind CSS, and daisyUI. The site showcases my skills, education, and experiences, providing visitors with an overview of my journey as a Product Engineer. Feel free to explore and learn more about me. 
