@@ -2,7 +2,6 @@ import { FaPhoneAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { HashLink as Link } from "react-router-hash-link";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Footer() {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
-import 'aos/dist/aos.css'; // Removed unused AOS import
+import 'aos/dist/aos.css'; 
 
 const ChatBot = () => {
   const [showChat, setShowChat] = useState(false);

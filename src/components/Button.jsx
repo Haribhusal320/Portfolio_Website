@@ -4,7 +4,7 @@ function Button() {
 const handleDownload = () => {
     const link = document.createElement('a')
     link.href=CV
-    link.download = 'Hari_Bhusal_Resume.pdf' // if we don't use this . download then the cv will be displayed diretly without downloading.
+    link.download = 'Hari_Bhusal_Resume.pdf' // if we don't use this . download then the cv will be displayed direCtly without downloading.
     link.click()
 }
 
