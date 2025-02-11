@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import 'aos/dist/aos.css'; // Removed unused AOS import
 
 const ChatBot = () => {
   const [showChat, setShowChat] = useState(false);
@@ -25,35 +24,18 @@ const ChatBot = () => {
   // Predefined Bot Responses
   const botResponses = {
     greeting: "👋 Hi there! I'm your virtual assistant. You can ask me about:\n📌 Skills\n📌 Experience\n📌 Education\nType 'contact' if you'd like to reach out!",
-    
     contact: "📩 I'd love to hear from you! Please share:\n1️⃣ Your Full Name\n2️⃣ Your Email\n3️⃣ Your Phone (optional)\n4️⃣ Your Message\nI'll get back to you soon!",
-
     thankYou: "✅ Thanks for reaching out! I'll review your message and respond within 24 hours.",
-
     skills: "🚀 My skill set includes:\n💻 React, JavaScript, Python, HTML/CSS\n🔗 Windchill & Automation\n⚙️ Web & Software Development",
-
     experience: "📊 I have good years of experience in:\n🔹 Frontend Development\n🔹 Automation & Windchill Integration\n🔹 Jira & Workflow Optimization",
-
     education: "🎓 I have done my masters in Electronic Systems Design at NTNU and bachelor's in Electrical and Electronics Engineering at Pokhara University.\n💡 Passionate about software, electronics automation, and web technologies!",
-
     default: "🤖 I'm here to assist you!\nTry asking about my:\n- Skills\n- Experience\n- Education\nType 'contact' to message me directly."
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    // Initialize AOS animations
+    import('aos').then(AOS => AOS.init({ duration: 1000 }));
   }, []);
-
-  const openChat = () => {
-    setShowChat(true);
-  
-    // Send greeting message only if it's the first time opening the chat
-    if (messages.length === 0) {
-      setTimeout(() => {
-        setMessages([{ text: botResponses.greeting, isBot: true }]);
-      }, 500);
-    }
-  };
-  
 
   // Handles user message submission
   const handleSend = async (e) => {
@@ -173,7 +155,7 @@ const ChatBot = () => {
         </div>
       ) : (
         <button
-          onClick={(openChat) => setShowChat(true)}
+          onClick={() => setShowChat(true)}
           className="group bg-gradient-to-br from-purple-600 to-blue-500 text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
           data-aos="fade-left"
         >
