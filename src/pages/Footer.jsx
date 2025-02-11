@@ -90,7 +90,7 @@ function Footer() {
             </h2>
             <div className="flex gap-4">
               <a 
-                href="https://linkedin.com/in/yourprofile" 
+                href="https://www.linkedin.com/in/haribhusal320/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 bg-white dark:bg-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
