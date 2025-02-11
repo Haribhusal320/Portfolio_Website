@@ -10,12 +10,13 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./pages/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import ChatBot from "./components/ChatBot";
 
 
 function App() {
   return (
     <Router>
-       <div>
+       <div className="relative">
         <ScrollToTopButton />
         <Header />
         <Profile />
@@ -24,6 +25,7 @@ function App() {
         <Skills />
         <Experience />
         <Contact />
+        <ChatBot />
         <Footer />
 
       </div>
