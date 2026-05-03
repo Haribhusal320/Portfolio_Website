@@ -1,28 +1,21 @@
-import React, { useEffect } from 'react';
-import NTNU from '../Images/NTNU.jpg';
-import PU from '../Images/PU.jpeg';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { FaGraduationCap } from 'react-icons/fa';
+import React, { useEffect } from "react";
+import { FaGraduationCap } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import NTNU from "../../assets/images/NTNU.jpg";
+import PU from "../../assets/images/PU.jpeg";
 
-function Card() {
+function EducationCard() {
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* NTNU Card */}
-      <div data-aos='fade-right' data-aos-duration='800'
-           className="group relative flex flex-col md:flex-row mb-6 p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-        
+      <div data-aos="fade-right" data-aos-duration="800" className="group relative flex flex-col md:flex-row mb-6 p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
         <div className="relative md:w-1/3 mb-4 md:mb-0 overflow-hidden rounded-xl">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <img 
-            src={NTNU} 
-            alt="NTNU Campus" 
-            className="w-full h-48 object-cover rounded-xl transform transition duration-500 group-hover:scale-105" 
-          />
+          <img src={NTNU} alt="NTNU Campus" className="w-full h-48 object-cover rounded-xl transform transition duration-500 group-hover:scale-105" />
         </div>
 
         <div className="md:ml-8 md:w-2/3">
@@ -42,17 +35,10 @@ function Card() {
         </div>
       </div>
 
-      {/* Pokhara University Card */}
-      <div data-aos='fade-left' data-aos-duration='800' data-aos-delay="200"
-           className="group relative flex flex-col md:flex-row mb-6 p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-        
+      <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200" className="group relative flex flex-col md:flex-row mb-6 p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
         <div className="relative md:w-1/3 mb-4 md:mb-0 overflow-hidden rounded-xl">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <img 
-            src={PU} 
-            alt="PU Campus" 
-            className="w-full h-48 object-cover rounded-xl transform transition duration-500 group-hover:scale-105" 
-          />
+          <img src={PU} alt="PU Campus" className="w-full h-48 object-cover rounded-xl transform transition duration-500 group-hover:scale-105" />
         </div>
 
         <div className="md:ml-8 md:w-2/3">
@@ -77,4 +63,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default EducationCard;
