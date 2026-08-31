@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
+body { @apply min-w-80 bg-base-100 text-base-content antialiased; }
+section { scroll-margin-top: 5rem; }
+::selection { @apply bg-primary text-primary-content; }
