@@ -12,7 +12,7 @@ export default function SectionTitle({
                 {eyebrow}
             </p>
 
-            <h2 className="text-xl font-black font-normalleading-tight text-black  lg:text-xl">
+            <h2 className="text-xl font-black leading-tight base-content  lg:text-xl">
                 {title}
             </h2>
 
