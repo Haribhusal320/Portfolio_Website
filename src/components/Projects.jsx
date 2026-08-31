@@ -54,8 +54,7 @@ function Projects() {
             <div className="mx-auto max-w-7xl">
                 <SectionTitle
                     eyebrow="Projects"
-                    title="Projects"
-                    description="Academic and engineering projects focused on interactive technology, embedded systems, and sustainable energy."
+                    title="Academic and engineering projects focused on interactive technology, embedded systems, and sustainable energy."
                 />
 
                 <div className="mt-12 space-y-8">

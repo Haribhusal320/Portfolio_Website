@@ -8,11 +8,11 @@ export default function SectionTitle({
 
     return (
         <div className="mx-auto mb-12 max-w-4xl text-center">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-primary sm:text-base">
+            <p className="mb-3 text-2xl font-bold uppercase tracking-[0.2em] text-primary">
                 {eyebrow}
             </p>
 
-            <h2 className="text-3xl font-black leading-tight text-primary sm:text-4xl lg:text-5xl">
+            <h2 className="text-xl font-black font-normalleading-tight text-black  lg:text-xl">
                 {title}
             </h2>
 
