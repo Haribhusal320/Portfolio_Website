@@ -102,7 +102,6 @@ function Contact() {
                 <SectionTitle
                     eyebrow="Contact"
                     title="Let's discuss engineering and software"
-                    description="Have a project, opportunity, or technical idea? Send me a message and I will get back to you."
                 />
 
                 <div className="mt-12 mx-auto max-w-3xl">
@@ -179,7 +178,7 @@ function Contact() {
                                     maxLength={2000}
                                     required
                                     disabled={status === "sending"}
-                                    placeholder="Tell me about your project, opportunity, or idea..."
+                                    placeholder="Write your message here..."
                                     className="textarea textarea-bordered w-full resize-y bg-base-100 text-base-content placeholder:text-base-content/40 focus:border-blue-500 focus:outline-none"
                                 />
                             </div>
